@@ -16,5 +16,6 @@ def home(request):
     return render(request, 'home.html', {'searchTerm':searchTerm, 'movies':movies})
 
 def about(request):
-    #return HttpResponse('<h1>Welcome to About Page</h1')
+    return HttpResponse('<h1>Welcome to About Page</h1')
     return render(request, 'about.html', {'name':'Valentina Aguilar'})
+
